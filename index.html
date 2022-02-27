@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>visbon</h2>
+<script>
+//Jan Immeker
+//21-02-2022
+//Huiswerkopdracht VISBON
+var artikel1 = "VISROLLADE";
+var artikel2 = "BOTERVIS";
+var artikel3 = "KIBBELING 500 GR.";
+var artikel4 = "VISKOEKJES";
+var artikel5 = "BAKJE RAVIGOTTESAUS";
+var prijs1 = 27.50;
+var prijs2 = 29.50;
+var prijs3 = 8.75;
+var prijs4 = 1.25;
+var prijs5 = 0.60;
+var gram1 = 0.535;
+var gram2 = 0.225;
+var stuks1 = 1;
+var stuks3 = 3
 
+var bonprijs1 = prijs1*gram1;
+document.write(artikel1);
+document.write(" ");
+document.write(gram1);
+document.write(" GR X ");
+document.write("\u20AC" + " " + prijs1.toFixed(2));
+document.write(" = ");
+document.write("\u20AC" + " " + bonprijs1.toFixed(2));
+document.write("<br>");
+
+var bonprijs2 = prijs2*gram2;
+document.write(artikel2);
+document.write(" ");
+document.write(gram2);
+document.write(" GR X ");
+document.write("\u20AC" + " " + prijs2.toFixed(2));
+document.write(" = ");
+document.write("\u20AC" + " " + bonprijs2.toFixed(2));
+document.write("<br>");
+
+var bonprijs3 = stuks1*prijs3
+document.write(artikel3);
+document.write(" ");
+document.write(stuks1);
+document.write(" STUKS X ");
+document.write("\u20AC" + " " + prijs3.toFixed(2));
+document.write(" = ");
+document.write("\u20AC" + " " + bonprijs3.toFixed(2));
+document.write("<br>");
+
+var bonprijs4 = stuks3*prijs4
+document.write(artikel4);
+document.write(" ");
+document.write(stuks3);
+document.write(" STUKS X ");
+document.write("\u20AC" + " " + prijs4.toFixed(2));
+document.write(" = ");
+document.write("\u20AC" + " " + bonprijs4.toFixed(2));
+document.write("<br>");
+
+var bonprijs5 = stuks3*prijs5
+document.write(artikel5);
+document.write(" ");
+document.write(stuks3);
+document.write(" STUKS X ");
+document.write("\u20AC" + " " + prijs5.toFixed(2));
+document.write(" = ");
+document.write("\u20AC" + " " + bonprijs5.toFixed(2));
+document.write("<br>");
+
+var voordeel = 0.48
+document.write("Uw voordeel per 3 stuks: " + "\u20AC"+ " ");
+document.write(voordeel);
+document.write("<br>");
+
+document.write("TOTAAL: " + "\u20AC"+ " ");
+document.write(bonprijs1+bonprijs2+bonprijs3+bonprijs4+bonprijs5-voordeel)
+
+</script>
+</body>
+</html>
